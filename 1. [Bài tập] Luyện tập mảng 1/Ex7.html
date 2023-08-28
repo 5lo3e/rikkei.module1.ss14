@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+</head>
+<body>
+    <script>
+        let arr = [];
+        for (let i = 0; i < 10; i++) {
+            arr[i] = Math.ceil(Math.random()*100);
+        }
+        console.log(arr);
+        let guess=+prompt("Nhập số muốn đoán");
+        if (arr.indexOf(guess)!==-1){
+            let i= arr.indexOf(guess)
+            arr.splice(i,1);
+            arr.push(0);
+        }
+        console.log(arr);
+        
+    </script>
+</body>
+</html>

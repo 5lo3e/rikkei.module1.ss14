@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <script>
+      let arr =[];
+      let arr2=[]; 
+      let x=0;
+        for(let i= 0; i<10;i++){
+        let number =+prompt("Nhập số thứ " +(i+1));
+        if (Number.isInteger(number)==false) {
+            --i
+            alert("Bạn phải nhập số nguyên");
+            continue
+        }
+        arr[i]=number;
+            if(arr[i]>=10){         
+                console.log(arr[i]);
+                arr2[x]=arr[i];
+                x++
+            }
+        }
+        console.log("Có "+ (arr2.length)+" số lớn hơn hoặc bằng 10");
+        for(let x=0 ; x<arr2.length;x++){
+            console.log(arr2[x]);
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6</title>
+</head>
+<body>
+    <script>
+        let text=prompt("Nhập chuỗi")
+        let arr= text.split("");
+        let check="-";
+      
+        for(let a=0;a<arr.length;a++){
+            if( arr[a]==check) {
+                arr.splice(a,1,"_");
+              
+            }
+        }
+        console.log(arr);
+      
+    
+        
+    </script>
+</body>
+</html>

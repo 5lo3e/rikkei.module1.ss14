@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+</head>
+
+<body>
+    <script>
+        let a = +prompt("Nhập số lượng có phần tử có trong mảng 1")
+        let arr = [];
+        for (let i = 0; i < a; i++) {
+            let Text = prompt("Nhập các phần tử");
+            arr[i] = Text;
+        }
+        let b = +prompt("Nhập số lượng có phần tử có trong mảng 2")
+        let brr = [];
+        for (let i = 0; i < a; i++) {
+            let Text = prompt("Nhập các phần tử");
+            brr[i] = Text;
+        }
+        let count=0;
+        for (let i = 0; i < array.length; i++) {
+            if (arr[i]==brr[i]) {
+                count++
+            }
+        }
+        if (count==arr.length&&count==brr.length) {
+            console.log("Đó là 2 chuỗi giống nhau");
+        }
+    </script>
+</body>
+
+</html>

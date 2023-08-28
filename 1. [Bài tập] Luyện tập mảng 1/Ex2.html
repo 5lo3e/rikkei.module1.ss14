@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+</head>
+
+<body>
+    <script>
+        let arr = [];
+        let max = 0;
+        for (let i = 0; i < 5; i++) {
+            let number = +prompt("Nhập số thứ " + (i + 1));
+            arr[i] = number;
+            if (arr.indexOf(number)!==-1){
+                alert("Số bạn nhập đã trùng, mời nhập lại");
+                --i;
+                continue;
+            }
+        }
+        max = arr[0]
+        for(let x in arr){
+            if (max<arr[x]) {
+                max =arr[x]
+            }
+        }
+        console.log("Số lớn nhất trong mảng đó là " + max);
+        console.log("Vị trí của phần tử đó trong mảng là " +arr.indexOf(max));
+    </script>
+</body>
+
+</html>
